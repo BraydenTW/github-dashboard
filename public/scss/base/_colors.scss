@@ -1,0 +1,39 @@
+
+$title-font: #000;
+$text-color: #2b2a36;
+
+$blue: #3279f4;
+$light-blue: #c7e0fc;
+
+h1, h2, h3, h4, h5, h6{
+    color: $title-font;
+}
+
+p{
+    color: $title-font;
+}
+
+a{
+    color: $blue;
+    font-weight: 800;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 0px;
+    &:before{
+        content: " ";
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        left: -2px;
+        right: -2px;
+        background: $light-blue;
+        transition: top 0.5s;
+        z-index: -1;
+    }
+    &:hover{
+        &:before{
+            
+        top: 50%;
+        }
+    }
+}

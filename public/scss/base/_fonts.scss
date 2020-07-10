@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+$title-font: "DM Mono";
+$main-font: "DM Sans";
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $title-font;
+}
+
+body{
+    font-family: $main-font;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.2em;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+}

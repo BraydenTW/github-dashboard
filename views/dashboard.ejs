@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraydenTW's Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body role="main">
+    <div class="content">
+        <div class="dashboard-info">
+            <div class="dashboard-title">
+                <h1>Github Dashboard</h1>
+            </div>
+            <div class="dashboard-para">
+                <p>
+                    I used NodeJS and Puppeteer to create a dashboard for my Github stats. View the Github repository <a href="https://github.com/BraydenTW/github-dashboard">here</a>.
+                </p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stats-item stats-followers">
+                <i class="fas fa-user-friends"></i> Followers: <%= stats.github_followers %>
+            </div>
+            <div class="stats-item stats-stars">
+                <i class="fas fa-star"></i> Star Count: <%= stats.github_stars %>
+            </div>
+            <div class="stats-item stats-repos">
+                <i class="fas fa-book"></i> Repositories: <%= stats.github_repos %>
+            </div>
+            <div class="stats-item stats-contributions">
+                <i class="fas fa-hands-helping"></i> Contributions this Year: <%= stats.github_contributions %>
+            </div>
+        </div>
+        <div class="dashboard-info">
+            <div class="dashboard-para">
+                <p>
+                    Feel free to drop by and follow me on Github ➡ <a href="https://github.com/BraydenTW">@BraydenTW</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

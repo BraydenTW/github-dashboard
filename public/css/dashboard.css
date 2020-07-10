@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+p {
+  color: #000;
+}
+
+a {
+  color: #3279f4;
+  font-weight: 800;
+  text-decoration: none;
+  position: relative;
+  padding: 0px 0px;
+}
+
+a:before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: -2px;
+  right: -2px;
+  background: #c7e0fc;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  z-index: -1;
+}
+
+a:hover:before {
+  top: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Mono";
+}
+
+body {
+  font-family: "DM Sans";
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.dashboard-info {
+  padding: 0px 12px;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stats-item {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px;
+  margin: 20px;
+  font-weight: 1.2em;
+  font-weight: 600;
+  border: solid 2px #d8dbe6;
+  border-radius: 10px;
+}
+
+.stats-item i {
+  padding-right: 15px;
+  font-size: 2em;
+}
+/*# sourceMappingURL=dashboard.css.map */
